@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.swiper {
+    margin-top: 100px;
+    width: 70%;
+    height: 75%;
+  }
+
+  .swiper-slide {
+
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+/* ------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+
+body{
+    font-family: 'GangwonEdu_OTFBoldA';
+    background-image: url(.//img/bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section{
+    height: 100vh;
+    min-height: 660px;
+}
+
+article{
+    width: 1500px;
+    height: 800px;
+    margin: 100px auto;
+}
+
+#sect1{
+    display: flex;
+    position: relative;
+}
+
+#sect1 .right h1{
+    margin-top: 200px;
+    
+}
+
+
+#sect1 .right .summary{
+    position: absolute;
+    width: 1656px;
+    height: 446px;
+    top: 270px;
+    background-color: #FBF6F1;
+    z-index: -1;
+}
+#sect1 .right .summary p{
+    width: 694px;
+    margin-top: 200px;
+    margin-left: 200px;
+
+    line-height: 30px;
+    font-size: 20px;
+}
+#sect1 figure {
+    position: absolute;
+    top: 0;
+    left: 1100px;
+}
+
+/* --------------------------------- */
+#sect2 article .summaryWrap{
+    display: flex;
+    width: 1000px;
+    margin: 100px auto;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+#sect2 .row1{
+    position: relative;
+}
+
+#sect2 .row1 p{
+    position: absolute;
+    top: 70px;
+    left: 99px;
+    
+    width: 200px;
+}
+
+/* --------------------------------- */
+
+#sect3 article .row2{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 200px;
+}
+#sect3 article .row2 ul{
+    display: flex;
+    gap: 250px;
+    position: absolute;
+    top: 150px;
+    left: 365px;
+}
+/* --------------------------------- */
+#sect4{
+    background-color: #FBF6F1;
+}
+
+#sect4 .row3{
+    margin-top: 100px;
+    text-align: center;
+}
+/* --------------------------------- */
+#sect6 .text{
+    display: flex;
+    width: 500px;
+    gap: 90px;
+    /* border: 1px solid; */
+    justify-content: center;
+    margin: 100px auto;
+
+}
+#sect6 .text img{
+    width: 100%;
+}
+#sect6 .color{
+   text-align: center;
+   padding: 60px;
+}
+#sect6 .color img{
+    width: 90%;
+}
+/* --------------------------------- */
+#sect7{
+    background-color: #FBF6F1;
+}
+
+#sect7 .row4{
+    text-align: center;
+    line-height: 300px;
+}
+#sect7 .icon{
+    margin-top: 100px;
+}
+
+  
+/* --------------------------------- */
