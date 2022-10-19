@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소리바다</title>
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.css'>
+    <link rel="stylesheet" href="/reset.css">
+    <script src="https://kit.fontawesome.com/97e9a91c54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./index_1.css">
+</head>
+<body>
+    
+    <div class="inner">
+        <div class="asideMenu">
+            <h1>
+                <img src="./img/logo.png" alt="">
+            </h1>
+            <ul class="menu">
+                <li><a href="#"><span>홈</span></a></li>
+                <li><a href="#"><span>차트</span></a></li>
+                <li><a href="#"><span>최신앨범</span></a></li>
+                <li><a href="#"><span>뮤직비디오</span></a></li>
+                <li><a href="#"><span>회사소개</span></a></li>
+                <li><a href="#"><span>공지사항</span></a></li>
+            </ul>
+            <div class="bg"></div>
+            <ul class="menu">
+                <li><a href="#"><span>서비스 소개</span></a></li>
+                <li><a href="#"><span>이용권 구매</span></a></li>
+                <li><a href="#"><span>이벤트</span></a></li>
+            </ul>
+            <div class="sns">
+                <ul>
+                    <li><a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hideMenu">
+            <h1><img src="./img/logo.png" alt=""></h1>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <header>
+            
+            <div class="topMenu">
+                <div class="search">
+                    <input type="text" placeholder="Search"/>
+                </div>
+                <div class="info">
+                    <div class="user">
+                        <div class="user__notifications">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="user__info">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </header>
+        <div class="bottom_palybar">
+            <img src="./img/playbar.png" alt="">
+            <div class="bottom_palybarhide"></div>
+        </div>
+        <section class="current-track">
+    
+            <div class="albumart">
+                <img src="./img/A-List_ K-Pop - Apple Music K-Pop 1.png" alt="">
+                <ul class="albumedesc">
+                    <li><h3>가솔린 (Gasoline)</h3></li>
+                    <li><p>키 (KEY)</p></li>
+                </ul>
+            </div> 
+    
+            <div class="current-track__actions">
+            
+              <a class="ion-ios-skipbackward"></a>
+              
+              <a class="ion-ios-play play"></a>
+              
+              <a class="ion-ios-skipforward"></a>
+              
+            </div>
+            
+            <div class="current-track__progress">
+            
+              <div class="current-track__progress__start">3:01</div>
+              
+              <div class="current-track__progress__bar">
+                
+                <div id="song-progress"></div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="current-track__options">
+              
+              <span class="controls">
+              
+                <a href="#" class="control volume">
+                  
+                  <i class="ion-volume-high"></i>
+                
+                  <div id="song-volume"></div>
+                  
+                </a>
+                
+              </span>
+              
+            </div>
+            
+          </section>
+          <div class="content">
+            <div class="contentInner">
+                <div class="title">
+                    <h1>추천 음악</h1>
+                </div>
+                <div class="info">
+                    <div class="infobox">
+                        <ul>
+                            <li class="albuminfo on">
+                                <div class="updown">
+                                    <div class="up">
+                                        <div class="infoDesc">
+                                            <h3>NewJeans 1st EP `New Jeans`</h3>
+                                            <p>Attention</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="albuminfo">
+                                <div class="updown">
+                                    <div class="up">
+                                        <div class="infoDesc">
+                                            <h3>IVE(아이브) After LIKE</h3>
+                                            <p>After LIKE</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </li>
+                            <li class="albuminfo">
+                                <div class="updown">
+                                    <div class="up">
+                                        <div class="infoDesc">
+                                            <h3>BORN PINK</h3>
+                                            <p>Shut Down</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </li>
+                            <li class="albuminfo">
+                                <div class="updown">
+                                    <div class="up">
+                                        <div class="infoDesc">
+                                            <h3>SEVENTEEN 4th Album Repackage 'SECTOR 17'</h3>
+                                            <p>세븐틴</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="albuminfo">
+                                <div class="updown">
+                                    <div class="up">
+                                        <div class="infoDesc">
+                                            <h3>FEARLESS</h3>
+                                            <p>FEARLESS</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="desc"></div>
+    
+                <div class="clear">
+                    <div class="option">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/Attention.png" alt="slide 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/After LIKE.png" alt="slide 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/_Shut Down_ Official M V.jpg" alt="slide 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/_WORLD.jpg" alt="slide 4">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/FEARLESS.jpg" alt="slide 5">
+                                </div>
+    
+                            </div>
+                            <div class="swiper-pagination"></div>
+    
+                        </div>
+                        <div class="button">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                           
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+                <div class="middle">
+                    <div class="chartWrap">
+                        <article class="chart">
+                            <h1>소리바다 TOP 100</h1>
+                            <nav>
+                                <ul>
+                                    <li class="on"><a href="#">TOP 100</a></li>
+                                    <li><a href="#">최신발매</a></li>
+                                    <li><a href="#">장르별</a></li>
+                                    <li><a href="#">시대별</a></li>
+                                    <li><a href="#">테마별</a></li>
+                                    <li><a href="#">아티스트</a></li>
+                                </ul>
+                            </nav>
+                            <div class="topchartWrap">
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/chart1.jpg" alt="">
+                                        <h2>1</h2>
+                                        <div class="artistname">
+                                            <h3>After LIKE</h3>
+                                            <p>IVE(아이브)</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/chart2.jpg" alt="">
+                                        <h2>2</h2>
+                                        <div class="artistname">
+                                            <h3>Attention</h3>
+                                            <p>NewJeans</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/chart3.jpg" alt="">
+                                        <h2>3</h2>
+                                        <div class="artistname">
+                                            <h3>Pink Venom</h3>
+                                            <p>BLACKPINK</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/chart2.jpg" alt="">
+                                        <h2>4</h2>
+                                        <div class="artistname">
+                                            <h3>Hype boy</h3>
+                                            <p>NewJeans</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/chart4.jpg" alt="">
+                                        <h2>5</h2>
+                                        <div class="artistname">
+                                            <h3>LOVE DIVE</h3>
+                                            <p>IVE(아이브)</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </article>
+                        <article class="chart">
+                            <h1>해외 급상승</h1>
+                            <nav>
+                                <ul>
+                                    <li class="on"><a href="#">TOP 100</a></li>
+                                    <li><a href="#">최신발매</a></li>
+                                    <li><a href="#">장르별</a></li>
+                                    <li><a href="#">시대별</a></li>
+                                    <li><a href="#">테마별</a></li>
+                                    <li><a href="#">아티스트</a></li>
+                                </ul>
+                            </nav>
+                            <div class="topchartWrap">
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/I Don_t Think That I Like Her 앨범 커버.jpg" alt="">
+                                        <h2>1</h2>
+                                        <div class="artistname">
+                                            <h3>I Don't Think That I Like Her</h3>
+                                            <p>Charlie Puth</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/I Don_t Think That I Like Her 앨범 커버.jpg" alt="">
+                                        <h2>2</h2>
+                                        <div class="artistname">
+                                            <h3>That's Hilarious</h3>
+                                            <p>Charlie Puth</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/PSYCHO 앨범 커버.jpg" alt="">
+                                        <h2>3</h2>
+                                        <div class="artistname">
+                                            <h3>PSYCHO</h3>
+                                            <p>Anne-Marie, Aitch</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/Congrats 앨범 커버.jpg" alt="">
+                                        <h2>4</h2>
+                                        <div class="artistname">
+                                            <h3>Congrats</h3>
+                                            <p>LANY</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="topChart">
+                                    <div class="left">
+                                        <img src="./img/I_m So Happy 앨범 커버.jpg" alt="">
+                                        <h2>5</h2>
+                                        <div class="artistname">
+                                            <h3>I'm So Happy (Feat. BENEE)</h3>
+                                            <p>Jeremy Zucker</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </article>
+                    </div>
+    
+                    <div class="diblock">
+                        <article class="artist">
+                            <h1>추천 아티스트</h1>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/500555.png" alt="">
+                                        </figure>
+                                        <p>블랙핑크</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/224.png" alt="">
+                                        </figure>
+                                        <p>자우림</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/107004.png" alt="">
+                                        </figure>
+                                        <p>아델</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/214210.png" alt="">
+                                        </figure>
+                                        <p>이하이</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/243100.png" alt="">
+                                        </figure>
+                                        <p>악동뮤지션</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/353359.png" alt="">
+                                        </figure>
+                                        <p>혁오</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            
+                        </article>
+                        <article class="recomandplaylist">
+                            <h1>추천 플레이리스트</h1>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/공원에서 플레이리스트 커버.jpg" alt="">
+                                        <div>공원에서</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/새벽 감성이 일렁일렁 플레이리스트 커버 (1).png" alt="">
+                                        <div>새벽 감성이 일렁일렁</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/우리 밤 산책 갈래_ 플레이리스트 커버.png" alt="">
+                                        <div>우리 밤 산책 갈래</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/다 포기 하고 싶을 때 플레이리스트 커버.jpg" alt="">
+                                        <div>다 포기 하고 싶을 때</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/퇴근 후 홈 트레이닝  플레이리스트 커버.png" alt="">
+                                        <div>퇴근 후 홈 트레이닝</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="magazine">
+                            <h1>매거진</h1>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/여름이었다. _ _신스_ DPR 이안.png" alt="">
+                                        <div>여름이었다. : <br>신스,</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/New Release _108 _ _키_ 찰리 푸스.png" alt="">
+                                        <div>New Release #108 : <br>키, 찰리 푸스</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/New Release _109 _ _존 레전드_ 이창섭.png" alt="">
+                                        <div>New Release #109 :<br>
+                                            존 레전드, 이창섭</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/무엇이든 물어보세요 _ _CIX.png" alt="">
+                                        <div>무엇이든 물어보세요 : <br>CIX</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <footer></footer>
+    
+            </div>
+
+        </div>
+
+    </div>
+   
+
+
+    <!-- -->
+
+   
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.js'></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script  src="./script.js"></script>
+        <script>
+          var slider = document.getElementById('song-progress');
+        
+        noUiSlider.create(slider, {
+            start: [ 20 ],
+            range: {
+                'min': [   0 ],
+                'max': [ 100 ]
+            }
+        });
+
+        var swiper1 = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 80,
+            depth: 200,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+    });
+
+
+    var swiper2 = new Swiper(".recomandmv", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+
+    });
+    var activeIdx = 0
+    swiper1.on('slideChange', function () {
+        
+        activeIdx = swiper1.activeIndex
+        
+        $('.albuminfo').removeClass('on')
+        if (activeIdx == 5 || activeIdx == 10) {
+            $('.albuminfo').eq(0).addClass('on')
+        }
+         if (activeIdx == 6 || activeIdx == 1) {
+            $('.albuminfo').eq(1).addClass('on')
+        } 
+        if (activeIdx == 7 || activeIdx == 2) {
+            $('.albuminfo').eq(2).addClass('on')
+        }
+        if (activeIdx == 8 || activeIdx == 3) {
+            $('.albuminfo').eq(3).addClass('on')
+        }
+        if (activeIdx == 9 || activeIdx == 4) {
+            $('.albuminfo').eq(4).addClass('on')
+        }
+
+
+    });
+        </script>
+</body>
+</html>

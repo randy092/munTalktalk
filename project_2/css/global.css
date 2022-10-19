@@ -1,0 +1,62 @@
+:root {
+  --mainTextColor: #333;
+  --mainColor: #3373ff;
+  --maxsize:50px;
+  --nextsize:30px;
+  --mediumsize:25px;
+  --minsize:16px;
+  /* --homeColor: #66ACFF; */
+}
+/* body{background-color: var(--secTitle);} 
+:root으로 지정한 값 적용할땐 이렇게 하세요
+*/
+@font-face {
+  font-family: BlackHanSans;
+  src: url("../font/BlackHanSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Pretendard-Bold;
+  src: url("../font/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Pretendard-SemiBold;
+  src: url("../font/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: Pretendard-Light;
+  src: url("../font/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+  font-family: Pretendard-Medium;
+  src: url("../font/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: Pretendard-Regular;
+  src: url("../font/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: Pretendard-Black;
+  src: url("../font/Pretendard-Black.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: Pretendard-Regular;
+}
+h2{font-size: 100px;}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+
